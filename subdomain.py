@@ -10,8 +10,8 @@ for sub in subdoms:
     try:
         requests.get(sub_domains)
 
-        except requests.ConnectionError:
-            pass
+    except requests.ConnectionError:
+        pass
 
-        else:
-            print("Valid domain: ",sub_domains)
+    else:
+        print("Valid domain: ",sub_domains)
